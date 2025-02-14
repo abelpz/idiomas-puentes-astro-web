@@ -1,0 +1,19 @@
+{
+  "site": {
+    "title": "IdiomasPuentes - Conectando Idiomas, Equipando a la Iglesia Global",
+    "description": "Empoderando a las comunidades para crecer y madurar en Cristo a través del idioma de su corazón"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "ccbt": "CCBT",
+    "resources": "Recursos",
+    "getInvolved": "Participa"
+  },
+  "hero": {
+    "title": "Acercando las lenguas, equipando a la Iglesia Global",
+    "subtitle": "Empoderando a las comunidades para crecer y madurar en Cristo a través del idioma de su corazón",
+    "cta1": "Nuestra Visión",
+    "cta2": "Aprende sobre CCBT"
+  }
+}

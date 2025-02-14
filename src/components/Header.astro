@@ -1,0 +1,26 @@
+---
+import { Icon } from 'astro-icon/components';
+import { t } from "i18next"
+import i18next from "i18next";
+
+const lang = i18next.language;
+console.log({t});
+---
+
+<header class="bg-blue-600 text-white">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <a href={`/${lang}`} class="flex items-center">
+      <Icon name="mdi:earth" class="w-8 h-8 mr-2" />
+      <span class="text-xl font-bold">IdiomasPuentes</span>
+    </a>
+    <nav class="flex items-center">
+      <ul class="flex space-x-4 mr-4">
+        <li><a href={`/${lang}`} class="hover:text-blue-200">{t('nav.home')}</a></li>
+        <li><a href={`/${lang}/about`} class="hover:text-blue-200">{t('nav.about')}</a></li>
+        <li><a href={`/${lang}/ccbt`} class="hover:text-blue-200">{t('nav.ccbt')}</a></li>
+        <li><a href={`/${lang}/resources`} class="hover:text-blue-200">{t('nav.resources')}</a></li>
+        <li><a href={`/${lang}/get-involved`} class="hover:text-blue-200">{t('nav.getInvolved')}</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

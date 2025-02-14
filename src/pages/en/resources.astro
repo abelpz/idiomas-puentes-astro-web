@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ResourceCard from '../components/ResourceCard.astro';
+
+const resources = [
+  {
+    title: "Literal Bridge Text",
+    description: "A literal translation of the Bible, designed as a tool for translation. Brings translators closer to the structure and literal expressions used in the original languages (Greek, Hebrew, Aramaic).",
+    link: "#",
+    image: "/images/literal-bridge-text.jpg"
+  },
+  {
+    title: "Simple Bridge Text",
+    description: "A simplified translation of the Bible, designed as a tool for translation. Helps translators understand the meaning behind the literal expressions, rhetorical figures, idioms, and difficult words.",
+    link: "#",
+    image: "/images/simple-bridge-text.jpg"
+  },
+  {
+    title: "Translation Notes",
+    description: "A set of notes written by missionaries and consultants to assist the translator throughout the translation process, verse by verse.",
+    link: "#",
+    image: "/images/translation-notes.jpg"
+  },
+  {
+    title: "Translation Academy",
+    description: "A manual containing all the translation concepts needed for a faithful translation from the bridge language to the tribal language.",
+    link: "#",
+    image: "/images/translation-academy.jpg"
+  },
+  {
+    title: "Translation Words",
+    description: "A dictionary of specific key terms to which the translator must pay special attention. Offers definitions and guides the translator to find the appropriate translation in context.",
+    link: "#",
+    image: "/images/translation-words.jpg"
+  },
+  {
+    title: "Translation Questions",
+    description: "A tool containing questions to verify the naturalness and accuracy of the text. Useful for measuring the tribal Church's understanding of the final translation.",
+    link: "#",
+    image: "/images/translation-questions.jpg"
+  }
+];
+---
+
+<Layout title="Translation Resources | IdiomasPuentes">
+  <div class="container mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold mb-8">Translation Resources</h1>
+    <p class="text-xl mb-8">Explore our comprehensive set of tools and resources designed to support the tribal Church in Bible translation:</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {resources.map(resource => (
+        <ResourceCard
+          title={resource.title}
+          description={resource.description}
+          link={resource.link}
+          image={resource.image}
+        />
+      ))}
+    </div>
+  </div>
+</Layout>

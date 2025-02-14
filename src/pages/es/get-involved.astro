@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Participa | IdiomasPuentes";
+---
+
+<Layout title={title}>
+  <div class="container mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold mb-8">Participa</h1>
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <img src="/images/get-involved.jpg" alt="Participa" class="rounded-lg shadow-lg" />
+      </div>
+      <div class="md:w-1/2 md:pl-8">
+        <p class="text-xl mb-8">Hay muchas formas de apoyar la misión de IdiomasPuentes y contribuir al trabajo de traducción de la Biblia:</p>
+        <ul class="list-disc list-inside text-lg mb-8">
+          <li>Ora por el trabajo de traducción de la Biblia y las iglesias tribales</li>
+          <li>Ofrece tus habilidades como voluntario en traducción, tecnología o administración</li>
+          <li>Asóciate con nosotros financieramente para apoyar proyectos en curso</li>
+          <li>Difunde la importancia de la traducción de la Biblia</li>
+        </ul>
+        <p class="text-xl mb-8">Al participar, estás ayudando a llevar la Palabra de Dios a las comunidades en el idioma de su corazón, fomentando el crecimiento espiritual y la transformación.</p>
+        <a href="mailto:info@idiomaspuentes.org" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition duration-300">Contáctanos para Participar</a>
+      </div>
+    </div>
+  </div>
+</Layout>

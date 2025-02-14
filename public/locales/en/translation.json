@@ -1,0 +1,19 @@
+{
+  "site": {
+    "title": "IdiomasPuentes - Bridging Languages, Equipping the Global Church",
+    "description": "Empowering communities to grow and mature in Christ through their heart language"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "ccbt": "CCBT",
+    "resources": "Resources",
+    "getInvolved": "Get Involved"
+  },
+  "hero": {
+    "title": "Bridging Languages, Equipping the Global Church",
+    "subtitle": "Empowering communities to grow and mature in Christ through their heart language",
+    "cta1": "Our Vision",
+    "cta2": "Learn About CCBT"
+  }
+}

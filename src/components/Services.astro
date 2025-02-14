@@ -1,0 +1,46 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const services = [
+  {
+    icon: "mdi:account-group",
+    title: "Training",
+    description: "Comprehensive training for tribal churches in translation techniques and best practices."
+  },
+  {
+    icon: "mdi:book-open-variant",
+    title: "Translation Resources",
+    description: "Access to Bridge Texts, Translation Notes, Translation Academy, and Translation Words."
+  },
+  {
+    icon: "mdi:laptop",
+    title: "Software Tools",
+    description: "Specialized translation software to streamline the Bible translation process."
+  },
+  {
+    icon: "mdi:earth",
+    title: "Global Network",
+    description: "Connecting churches across Latin America and Africa to share resources and knowledge."
+  }
+];
+---
+
+<section id="services" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {services.map(service => (
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="flex justify-center mb-4">
+            <Icon name={service.icon} class="w-12 h-12 text-blue-500" />
+          </div>
+          <h3 class="text-xl font-semibold text-center mb-2">{service.title}</h3>
+          <p class="text-center">{service.description}</p>
+        </div>
+      ))}
+    </div>
+    <div class="text-center mt-8">
+      <a href="/resources" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition duration-300">Explore Our Resources</a>
+    </div>
+  </div>
+</section>

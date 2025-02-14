@@ -1,16 +1,34 @@
 ---
+// Get the current URL path
+const currentPath = Astro.url.pathname;
 
+// Only proceed with language detection and redirect if we're at the root path
+if (currentPath === '/' || currentPath === '') {
+    // Get browser's preferred language
+    const acceptLanguage = Astro.request.headers.get('accept-language') || '';
+    const browserLang = acceptLanguage
+        .split(',')[0]          // Get first language in the list
+        .split('-')[0]          // Get language code without region
+        .toLowerCase();         // Normalize to lowercase
+
+    // Define supported languages
+    const supportedLanguages = ['en', 'es'];
+    
+    // Determine target language:
+    // If browser language is supported, use it; otherwise default to English
+    const targetLang = supportedLanguages.includes(browserLang) ? browserLang : 'en';
+    
+    return Astro.redirect(`/${targetLang}`);
+}
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Redirecting...</title>
+    </head>
+    <body>
+        <p>Redirecting to appropriate language version...</p>
+    </body>
+</html> 

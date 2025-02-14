@@ -1,0 +1,36 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const missionItems = [
+  {
+    icon: "mdi:book-open-page-variant",
+    title: "Bible Translation",
+    description: "We equip and assist the Global Church to translate the Bible into their own languages, providing free, open-source support and tools."
+  },
+  {
+    icon: "mdi:link-variant",
+    title: "Bridge Languages",
+    description: "We leverage Spanish and Portuguese as bridge languages to facilitate Bible translation and resource sharing across Latin America and Africa."
+  },
+  {
+    icon: "mdi:heart",
+    title: "Church Empowerment",
+    description: "We empower tribal churches to undertake Bible translation projects, fostering spiritual growth and maturity within their communities."
+  }
+];
+---
+
+<section id="mission" class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Mission</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      {missionItems.map(item => (
+        <div class="flex flex-col items-center text-center">
+          <Icon name={item.icon} class="w-16 h-16 text-blue-500 mb-4" />
+          <h3 class="text-xl font-semibold mb-2">{item.title}</h3>
+          <p>{item.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

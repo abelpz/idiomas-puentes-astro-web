@@ -1,0 +1,56 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<footer id="contact" class="bg-blue-600 text-white py-8">
+  <div class="container mx-auto px-4">
+    <div class="grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+        <ul class="space-y-2">
+          <li class="flex items-center">
+            <Icon name="mdi:email" class="w-5 h-5 mr-2" />
+            <a href="mailto:info@idiomaspuentes.org">info@idiomaspuentes.org</a>
+          </li>
+          <li class="flex items-center">
+            <Icon name="mdi:phone" class="w-5 h-5 mr-2" />
+            <span>+1 (123) 456-7890</span>
+          </li>
+          <li class="flex items-center">
+            <Icon name="mdi:map-marker" class="w-5 h-5 mr-2" />
+            <span>123 Main St, City, Country</span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="#mission" class="hover:text-blue-200">Our Mission</a></li>
+          <li><a href="#services" class="hover:text-blue-200">Services</a></li>
+          <li><a href="#" class="hover:text-blue-200">Donate</a></li>
+          <li><a href="#" class="hover:text-blue-200">Volunteer</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Newsletter</h3>
+        <p class="mb-4">Stay updated with our latest news and events.</p>
+        <form class="flex">
+          <input
+            type="email"
+            placeholder="Your email"
+            class="flex-grow px-3 py-2 rounded-l-md text-gray-800"
+          />
+          <button
+            type="submit"
+            class="bg-blue-500 hover:bg-blue-400 px-4 py-2 rounded-r-md transition duration-300"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="mt-8 text-center">
+      <p>&copy; 2024 IdiomasPuentes. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
