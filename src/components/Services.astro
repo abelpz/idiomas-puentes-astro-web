@@ -4,30 +4,30 @@ import { Icon } from 'astro-icon/components';
 const services = [
   {
     icon: "mdi:account-group",
-    title: "Training",
-    description: "Comprehensive training for tribal churches in translation techniques and best practices."
+    title: "Entrenamiento",
+    description: "Entrenamiento integral de las iglesias tribales en técnicas de traducción y buenas prácticas."
   },
   {
     icon: "mdi:book-open-variant",
-    title: "Translation Resources",
-    description: "Access to Bridge Texts, Translation Notes, Translation Academy, and Translation Words."
+    title: "Recursos de traducción",
+    description: "Acceso a textos puentes, notas de traducción, academia de traducción y palabras de traducción."
   },
   {
     icon: "mdi:laptop",
-    title: "Software Tools",
-    description: "Specialized translation software to streamline the Bible translation process."
+    title: "Herramientas informáticas",
+    description: "Programas de traducción especializados para agilizar el proceso de traducción de la Biblia."
   },
   {
     icon: "mdi:earth",
-    title: "Global Network",
-    description: "Connecting churches across Latin America and Africa to share resources and knowledge."
+    title: "Red mundial",
+    description: "Conectar a las iglesias de América Latina y África para compartir recursos y conocimientos."
   }
 ];
 ---
 
 <section id="services" class="py-16 bg-gray-100">
   <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+    <h2 class="text-3xl font-bold text-center mb-8">Nuestros servicios</h2>
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
       {services.map(service => (
         <div class="bg-white p-6 rounded-lg shadow-md">
@@ -40,7 +40,7 @@ const services = [
       ))}
     </div>
     <div class="text-center mt-8">
-      <a href="/resources" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition duration-300">Explore Our Resources</a>
+      <a href="/resources" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition duration-300">Explora nuestros recursos</a>
     </div>
   </div>
 </section>
